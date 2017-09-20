@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/ComplexNumbers/ComplexNumber.cpp
+ComplexNumber.h
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/ComplexNumbers/ComplexNumber.h
+
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/ComplexNumbers/ComplexNumber.h
+iostream
+-
+
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/Exercises.cpp
+Exercises.h
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/Exercises.h
+
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/Exercises.h
+ComplexNumbers/ComplexNumber.h
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/ComplexNumbers/ComplexNumber.h
+iostream
+-
+
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/main.cpp
+iostream
+-
+Exercises.h
+C:/Users/Owner/CLionProjects/UdemyTutorials/AdvancedCPP/OperatorOverloading/Exercises.h
+
