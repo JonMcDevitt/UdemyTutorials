@@ -13,6 +13,8 @@ using namespace ComplexNumbers;
 class Exercises {
 public:
     static void ComplexNumberClass();
+
+    static void OverloadingPlus();
 };
 
 

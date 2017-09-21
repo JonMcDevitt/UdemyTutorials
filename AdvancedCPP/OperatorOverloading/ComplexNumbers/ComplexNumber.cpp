@@ -30,7 +30,12 @@ const ComplexNumber &ComplexNumber::operator=(const ComplexNumber &num) {
     return *this;
 }
 
+/** THIS WAS SO RIDICULOUS AND CONFUSING    */
 ostream &operator<<(ostream& out, ComplexNumber& num) {
     out << "(" << num.GetReal() << ", " << num.GetImaginary() << ")";
     return out;
+}
+
+ComplexNumber operator+(const ComplexNumber &num1, const ComplexNumber &num2) {
+    return ComplexNumber(num1.GetReal() + num2.GetReal(), num1.GetImaginary() + num2.GetImaginary());
 }

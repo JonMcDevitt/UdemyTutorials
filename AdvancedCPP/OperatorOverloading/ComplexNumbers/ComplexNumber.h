@@ -32,11 +32,15 @@ namespace ComplexNumbers {
             return imaginary;
         }
 
+
     };
+
 }
+
+
+
+/** THIS WAS SO RIDICULOUS AND CONFUSING    */
 ostream &operator<<(ostream& out, ComplexNumbers::ComplexNumber& num);
 
-
-
-
+ComplexNumbers::ComplexNumber operator+(const ComplexNumbers::ComplexNumber &num1, const ComplexNumbers::ComplexNumber &num2);
 #endif //OPERATOROVERLOADING_COMPLEXNUMBER_H

@@ -13,3 +13,18 @@ void Exercises::ComplexNumberClass() {
 
     cout << c1 << endl;
 }
+
+void Exercises::OverloadingPlus() {
+    ComplexNumber c1(3, 1);
+    ComplexNumber c2(5, -1);
+
+    cout << "Number 1: " << c1 << endl;
+    cout << "Number 2: " << c2 << endl;
+
+    ComplexNumber c3 = c1 + c2;
+
+    cout << "Number 3 = #1 + #2 ==> " << c3 << endl;
+
+    ComplexNumber c4 = c1 + c2 + c3;
+    cout << "Number 4 = 1 + 2 + 3 ==> " << c4 << endl;
+}

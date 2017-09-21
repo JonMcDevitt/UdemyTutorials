@@ -5,5 +5,6 @@ using namespace std;
 
 int main() {
     Exercises::ComplexNumberClass();
+    Exercises::OverloadingPlus();
     return 0;
 }
