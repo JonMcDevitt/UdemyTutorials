@@ -5,6 +5,7 @@
 #include "Exercises.h"
 
 void Exercises::ComplexNumberClass() {
+    cout << "----The Complex Number Class----" << endl;
     ComplexNumber c;    /** Runs the blank constructor  */
     ComplexNumber c1(2, 3); /** Runs the args-filled constructor    */
     ComplexNumber c2 = c1;  /** Runs the copy constructor   */
@@ -15,6 +16,8 @@ void Exercises::ComplexNumberClass() {
 }
 
 void Exercises::OverloadingPlus() {
+    cout << "----Overloading Plus----" << endl;
+
     ComplexNumber c1(3, 1);
     ComplexNumber c2(5, -1);
 
@@ -27,4 +30,18 @@ void Exercises::OverloadingPlus() {
 
     ComplexNumber c4 = c1 + c2 + c3;
     cout << "Number 4 = 1 + 2 + 3 ==> " << c4 << endl;
+}
+
+void Exercises::OverloadingEquality() {
+    cout << "----Overloading Equality----" << endl;
+
+    ComplexNumber c1(3, 1);
+    ComplexNumber c2(4, 5);
+    ComplexNumber c3(3, 1);
+
+    cout << c1 << " is different from " << c2 << "?" << endl;
+    cout << ((c1 != c2) ? "true" : "false") << endl;
+
+    cout << c1 << " is the same as " << c3 << "?" << endl;
+    cout << ((c1 == c3) ? "true" : "false") << endl;
 }

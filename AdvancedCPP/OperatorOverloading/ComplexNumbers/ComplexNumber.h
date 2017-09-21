@@ -32,7 +32,9 @@ namespace ComplexNumbers {
             return imaginary;
         }
 
+        bool operator==(const ComplexNumber &num) const;
 
+        bool operator!=(const ComplexNumber &num) const;
     };
 
 }

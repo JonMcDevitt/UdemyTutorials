@@ -15,6 +15,8 @@ public:
     static void ComplexNumberClass();
 
     static void OverloadingPlus();
+
+    static void OverloadingEquality();
 };
 
 
