@@ -38,6 +38,10 @@ bool ComplexNumber::operator!=(const ComplexNumber &num) const {
     return real != num.GetReal() && imaginary != num.GetImaginary();
 }
 
+ComplexNumber ComplexNumber::operator*() const {
+    return ComplexNumber(real, -imaginary);
+}
+
 /** THIS WAS SO RIDICULOUS AND CONFUSING    */
 ostream &operator<<(ostream& out, ComplexNumber& num) {
     out << "(" << num.GetReal() << ", " << num.GetImaginary() << ")";

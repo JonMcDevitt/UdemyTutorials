@@ -35,6 +35,8 @@ namespace ComplexNumbers {
         bool operator==(const ComplexNumber &num) const;
 
         bool operator!=(const ComplexNumber &num) const;
+
+        ComplexNumber operator*() const;
     };
 
 }

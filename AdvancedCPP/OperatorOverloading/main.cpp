@@ -7,5 +7,6 @@ int main() {
     Exercises::ComplexNumberClass();
     Exercises::OverloadingPlus();
     Exercises::OverloadingEquality();
+    Exercises::OverloadingDereference();
     return 0;
 }

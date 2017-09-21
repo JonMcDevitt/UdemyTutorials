@@ -17,6 +17,8 @@ public:
     static void OverloadingPlus();
 
     static void OverloadingEquality();
+
+    static void OverloadingDereference();
 };
 
 

@@ -45,3 +45,7 @@ void Exercises::OverloadingEquality() {
     cout << c1 << " is the same as " << c3 << "?" << endl;
     cout << ((c1 == c3) ? "true" : "false") << endl;
 }
+
+void Exercises::OverloadingDereference() {
+
+}
