@@ -1,6 +1,7 @@
 #include <iostream>
+#include "Exercises.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Exercises::TemplateClasses();
     return 0;
 }
