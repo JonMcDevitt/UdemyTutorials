@@ -10,6 +10,12 @@
 class Exercises {
 public:
     static void TemplateClasses();
+
+    static void TemplateFunctions();
+
+private:
+    template <typename T>
+    static void print(T data);
 };
 
 
