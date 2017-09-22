@@ -23,5 +23,5 @@ void Exercises::TemplateFunctions() {
 
 template<class T>
 void Exercises::print(T data) {
-
+    cout << data << endl;
 }
