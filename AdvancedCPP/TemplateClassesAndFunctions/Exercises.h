@@ -6,6 +6,9 @@
 #define TEMPLATECLASSESANDFUNCTIONS_EXERCISES_H
 
 #include "Test.h"
+#include <algorithm>
+#include <vector>
+
 
 class Exercises {
 public:
@@ -13,9 +16,25 @@ public:
 
     static void TemplateFunctions();
 
+    static void TemplateFunctionsAndTypeInference();
+
+    static void FunctionPointers();
+
+    static void UsingFunctionPointers();
+
 private:
-    template <typename T>
+    template<typename T>
     static void print(T data);
+
+    static void print(int data);
+
+    static void test();
+
+    static void testWithParams(int a, int b);
+
+    static bool match(string test);
+
+    static int CountStrings(vector<string> &words, bool (*matcher)(string testVal));
 };
 
 

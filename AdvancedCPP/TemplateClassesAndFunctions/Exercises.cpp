@@ -25,3 +25,71 @@ template<class T>
 void Exercises::print(T data) {
     cout << data << endl;
 }
+
+void Exercises::TemplateFunctionsAndTypeInference() {
+    cout << "----Template Functions and Type Inference----" << endl;
+}
+
+void Exercises::print(int data) {
+    cout << data << endl;
+}
+
+void Exercises::FunctionPointers() {
+    cout << "----Function Pointers----" << endl;
+
+    test();
+    void (*pTest)();    /** <-- Variable which is a pointer to a function with a void return type and 0 parameters  */
+
+    pTest = test;
+
+    pTest();    /** Call the function   */
+
+    void (*newTest)(int, int);
+    newTest = testWithParams;
+
+    newTest(5, 6);
+}
+
+void Exercises::test() {
+    cout << "Hello" << endl;
+}
+
+void Exercises::testWithParams(int a, int b) {
+    cout << a*b << endl;
+}
+
+void Exercises::UsingFunctionPointers() {
+    cout << "----Using Function Pointers----" << endl;
+
+    vector<string> texts;
+    texts.emplace_back("One");
+    texts.emplace_back("Two");
+    texts.emplace_back("Three");
+    texts.emplace_back("Two");
+    texts.emplace_back("Four");
+    texts.emplace_back("Two");
+    texts.emplace_back("Three");
+
+    cout << match("oned") << endl;
+
+
+    /** Given a list, pass a condition (boolean) to determine when we should count up */
+    count_if(texts.begin(), texts.end(), match);
+
+    cout << "Number of strings with 3 characters: " << endl;
+    cout << CountStrings(texts, match);
+}
+
+bool Exercises::match(string test) {
+    return test.size() == 3;
+}
+
+int Exercises::CountStrings(vector<string> &words, bool (*matcher)(string testVal)) {
+    int tally = 0;
+    for(auto &value : words) {
+        if(matcher(value)) {
+            tally++;
+        }
+    }
+    return tally;
+}
