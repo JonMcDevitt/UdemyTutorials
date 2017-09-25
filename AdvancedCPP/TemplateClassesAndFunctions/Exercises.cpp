@@ -77,7 +77,7 @@ void Exercises::UsingFunctionPointers() {
     count_if(texts.begin(), texts.end(), match);
 
     cout << "Number of strings with 3 characters: " << endl;
-    cout << CountStrings(texts, match);
+    cout << CountStrings(texts, match) << endl;
 }
 
 bool Exercises::match(string test) {
@@ -92,4 +92,17 @@ int Exercises::CountStrings(vector<string> &words, bool (*matcher)(string testVa
         }
     }
     return tally;
+}
+
+void Exercises::ObjectSlicingAndPolymorphism() {
+    Child c1;
+    Parent &p1 = c1;
+    p1.print();
+
+    Parent p2 = Child();
+
+    p2.print();
+
+    cout << "Deleting p2" << endl;
+    delete p2;
 }

@@ -5,10 +5,12 @@
 #ifndef TEMPLATECLASSESANDFUNCTIONS_EXERCISES_H
 #define TEMPLATECLASSESANDFUNCTIONS_EXERCISES_H
 
-#include "Test.h"
 #include <algorithm>
 #include <vector>
 
+#include "Test.h"
+#include "Parent.h"
+#include "Child.h"
 
 class Exercises {
 public:
@@ -21,6 +23,8 @@ public:
     static void FunctionPointers();
 
     static void UsingFunctionPointers();
+
+    static void ObjectSlicingAndPolymorphism();
 
 private:
     template<typename T>

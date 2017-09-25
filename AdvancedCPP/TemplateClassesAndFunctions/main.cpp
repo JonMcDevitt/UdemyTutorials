@@ -6,5 +6,6 @@ int main() {
     Exercises::TemplateFunctions();
     Exercises::FunctionPointers();
     Exercises::UsingFunctionPointers();
+    Exercises::ObjectSlicingAndPolymorphism();
     return 0;
 }
