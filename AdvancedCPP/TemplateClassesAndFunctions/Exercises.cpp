@@ -3,6 +3,7 @@
 //
 
 #include "Exercises.h"
+#include "Animals/Labrador.h"
 
 void Exercises::TemplateClasses() {
     cout << "----Template Classes----" << endl;
@@ -95,6 +96,8 @@ int Exercises::CountStrings(vector<string> &words, bool (*matcher)(string testVa
 }
 
 void Exercises::ObjectSlicingAndPolymorphism() {
+    cout << "----Object Slicing and Polymorphism----" << endl;
+
     Child c1;
     Parent &p1 = c1;
     p1.print();
@@ -102,7 +105,20 @@ void Exercises::ObjectSlicingAndPolymorphism() {
     Parent p2 = Child();
 
     p2.print();
+}
 
-    cout << "Deleting p2" << endl;
-    delete p2;
+void Exercises::AbstractClassesAndPureVirtualFunctions() {
+    cout << "----Abstract Classes and Pure Virtual Functions----" << endl;
+
+    Labrador labrador;
+    Dog *dog = &labrador;
+
+    dog->Speak();
+    labrador.Run();
+
+    Labrador labradors[10];
+
+    for(auto lab : labradors) {
+        lab.Run();
+    }
 }

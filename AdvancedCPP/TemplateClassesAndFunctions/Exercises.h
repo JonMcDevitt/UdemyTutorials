@@ -26,6 +26,8 @@ public:
 
     static void ObjectSlicingAndPolymorphism();
 
+    static void AbstractClassesAndPureVirtualFunctions();
+
 private:
     template<typename T>
     static void print(T data);

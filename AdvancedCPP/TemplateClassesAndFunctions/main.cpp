@@ -7,5 +7,6 @@ int main() {
     Exercises::FunctionPointers();
     Exercises::UsingFunctionPointers();
     Exercises::ObjectSlicingAndPolymorphism();
+    Exercises::AbstractClassesAndPureVirtualFunctions();
     return 0;
 }
